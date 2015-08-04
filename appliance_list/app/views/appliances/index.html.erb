@@ -1,0 +1,28 @@
+<div class="title">
+	<h1>EPA EnergyStar Most Efficient Appliances</h1>
+</div>
+
+<div class="list">
+	<ul> <% @appliances.each do |appliance| %>
+		<li> <%= appliance.name %> | <%= appliance.price %> </li>
+	</ul> <% end %>
+</div>
+
+
+<!-- FIX THIS PART -->
+<div class="search_bar">  
+	<h3>search appliances</h3>
+	<!-- how could you apply a filter that selects the criteria for which you want to search by? -->
+	<p> search by: <a href="">name</a> <a href="">brand</a> <a href="">type</a> </p>
+	<div class="form">
+		<%= form_for :appliance do |f| %>
+			<p>
+		 		<%= f.label :name %> <br>
+		 		<%= f.text_field :name %>
+	 		</p>
+	 		<p>
+	 			<% f.submit %>
+	 		</p>
+		<% end %>
+	</div>
+</div>	
