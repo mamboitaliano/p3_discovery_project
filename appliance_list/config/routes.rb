@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
-  get 'appliances/index'
+  get 'appliances/retrieve' => 'appliances#retrieve'
+
+  get 'appliances/search' => 'appliances#search'
+  # get 'appliances/index'
   resources :appliances
 
   root 'appliances#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

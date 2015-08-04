@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20150804021606) do
   create_table "appliances", force: :cascade do |t|
     t.string   "name"
     t.string   "brand"
-    t.string   "type"
     t.string   "subtype"
     t.text     "description"
     t.string   "price"

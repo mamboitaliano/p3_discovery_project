@@ -7,8 +7,7 @@ module AppliancesHelper
 		# base_uri "write API base uri here"
 
 		def initialize
-			# put shit here
-			# @application = 'Energy Efficient Appliances'
+			@application = 'Energy Efficient Appliances'
 			# @headers = {}
 		end
 
