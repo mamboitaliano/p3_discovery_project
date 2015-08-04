@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'appliances/retrieve' => 'appliances#retrieve'
 
-  get 'appliances/search' => 'appliances#search'
+  post 'appliances/search' => 'appliances#search'
   # get 'appliances/index'
   resources :appliances
 

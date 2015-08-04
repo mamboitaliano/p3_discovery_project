@@ -19,8 +19,14 @@
 	</div>
 </div>
 
-<%= form_tag("/appliances/search", method: "get") do %>
+<%= form_tag("/appliances/search", method: "post") do %>
   <%= label_tag(:query, "search for:") %>
   <%= text_field_tag(:query) %>
   <%= submit_tag("search") %>
 <% end %>
+
+<!-- <select id='type'>
+  <option value="washing machines">washing machines</option>
+  <option value="dishwashers">dishwashers</option>
+</select>
+ -->
